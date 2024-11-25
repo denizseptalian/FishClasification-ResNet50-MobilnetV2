@@ -37,8 +37,14 @@ class_labels = [
 
 # Streamlit app interface
 def main():
-    st.title("Fish Classification with Comparison Feature")
-    st.write("Upload an image of a fish to classify using ResNet50, MobileNet50, or compare both.")
+    st.title("Fish Classification Deeplearning A - Kelompok 4")
+    st.write("Upload Gambar Untuk Uji Coba Model")
+    
+    # Add dataset download link
+    st.markdown(
+        "[📥 Download Dataset Uji Coba](https://drive.google.com/drive/folders/1YLJyr2jc7BGZlfAzYM0yegT4SCe7UB02?usp=sharing)",
+        unsafe_allow_html=True
+    )
 
     # Upload image section
     uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
